@@ -1,0 +1,19 @@
+{
+  "name": "devx-multichain-balances",
+  "version": "1.1.0",
+  "description": "Free CLI + MCP server: wallet balances (native + USDC/USDT and majors) on Base, Ethereum, Arbitrum, Optimism, Polygon, Avalanche, BNB Chain, Solana and Tron via public RPCs. Read-only, no keys. Optional hosted 9-chain call via x402 (0.002 USDC).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Made by DevX (madebydevx.com)",
+  "repository": { "type": "git", "url": "git+https://github.com/devx-agent/multichain-balances.git" },
+  "homepage": "https://wallet-balances.nextill-pos.workers.dev",
+  "bugs": { "url": "https://github.com/devx-agent/multichain-balances/issues" },
+  "keywords": ["wallet", "balances", "multichain", "ethereum", "base", "solana", "tron", "usdc", "usdt", "erc20", "spl", "trc20", "mcp", "x402", "agents"],
+  "engines": { "node": ">=20" },
+  "main": "./src/index.js",
+  "bin": { "devx-multichain-balances": "bin/cli.js" },
+  "files": ["src", "bin", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "mcpName": "io.github.devx-agent/multichain-balances",
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.32.1", "@noble/curves": "^1.9.7", "@noble/hashes": "^1.8.0", "@scure/base": "^1.2.6", "zod": "^3.25.0" }
+}
