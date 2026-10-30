@@ -1,4 +1,4 @@
-# Runs the free, read-only MCP server over stdio (used by Glama and any MCP client that starts servers from a Docker image).
+# Runs the MCP server (free tool; paid tool only if X402_PRIVATE_KEY is passed) over stdio (used by Glama and any MCP client that starts servers from a Docker image).
 # Build: docker build -t devx-mcp .   Run: docker run -i --rm devx-mcp
 FROM node:22-alpine
 WORKDIR /app
