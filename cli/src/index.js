@@ -12,7 +12,7 @@ export const isTron = (a) => /^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(a || "");
 export const isSol = (a) => !isTron(a) && B58.test(a || "") && a.length >= 32 && a.length <= 44;
 export const family = (a) => isEvm(a) ? "evm" : isTron(a) ? "tron" : isSol(a) ? "solana" : null;
 export const chainFamily = (c) => c === "solana" ? "solana" : c === "tron" ? "tron" : EVM_CHAINS.includes(c) ? "evm" : null;
-const UA = "devx-multichain-balances-cli/2.0.0";
+const UA = "devx-multichain-balances-cli/2.1.0";
 
 /** Free: native + USDC (USDT on Tron) of one address on one chain, from the hosted free endpoint. */
 export async function basicBalance(address, chain, base = DEFAULT_BASE) {

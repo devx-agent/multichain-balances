@@ -1,6 +1,6 @@
 {
   "name": "devx-multichain-balances",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "CLI + MCP client for the hosted DevX Multichain Balances API: free one-chain lookup (native + USDC), and the full 9-chain call (7 EVM chains, Solana, Tron, majors + custom tokens) for 0.002 USDC per call via x402 on Base, paid from your own wallet.",
   "type": "module",
   "license": "MIT",
